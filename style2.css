@@ -1,0 +1,340 @@
+body {
+  margin-bottom: 0%;
+  padding-left: 3%;
+  margin: fixed;
+  background-color: #B7D0E1;
+}
+
+/* Corrected background image CSS */
+.bg-img {
+  
+  background-image: url("2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0px;
+  position: relative;
+  
+}
+
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates a grid with 3 columns */
+  gap: 0px; /* Gap between images */
+  margin-left: 400px; /* Adjust margin to position grid */
+  justify-content: space-around; /* Distribute items evenly along the row */
+}
+
+.image-grid img {
+  width: 100%; /* Set images to occupy full width of their grid cell */
+  height: auto; /* Maintain aspect ratio */
+  border-radius:2%
+}
+
+/* Styling header */
+header {
+  overflow: hidden;
+  background-color: #FEFEFA;
+  text-align: center;
+  padding: 0px 0;
+  top: 0;
+  position: relative; /* Positioning context for absolute positioning */
+  border-bottom: 1px solid #A4A4A4 ;
+  background-color: #08155c;
+  width: 100%;
+  
+}
+
+/* Styling for centered text */
+.centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px; /* Set height as needed */
+  margin-right: 830px;
+  margin-top: -560px;
+  
+}
+
+.centered-text h3 {
+  font-size: 20px; /* Adjust font size */
+  color: #0818A8; /* Text color */
+}
+
+.adeh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px; /* Set height as needed */
+  margin-right: 800px;
+  margin-top: 400px;
+  color: #0818A8;
+}
+
+.centered-text h2 {
+  font-size: 15px; /* Adjust font size */
+  color: #0818A8;
+ 
+}
+
+/* position logo */
+header .container {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 15px; /* Adjust vertical spacing */
+}
+
+/* SNAPSHOT STORE */
+
+header h2 {
+  font-size: 25px;
+  color: white; /* cobalt blue*/
+  }
+  
+/* Styling for the Profile and Register links */
+  /* horizontal nav */
+  .profile-register {
+  position: absolute;
+  top: 35px;
+  right: 10px; /* Adjust right position */
+}
+  
+  
+  .profile-register a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 6px; /* Adjust padding as needed */
+    margin-left: 5px; /* Adjust margin between links */
+    font-size: 20px; /* Increase the font size */
+}
+  
+  .profile-register a i{
+    margin-right: 10px;
+    color: grey;
+  }
+  
+  /* Change color on hover */
+.profile-register a:hover ,
+.profile-register a:hover i{
+  color: #0047ab;
+}
+  
+  /* Change color on click */
+  .profile-register a:active {
+    color: #0047ab;
+  }
+  
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 20px; /* Increase size of navigation */
+    
+  }
+  
+  header nav ul li {
+    margin-left: 20px; /* Separate the list items */
+    
+  }
+  
+  header nav ul li:first-child {
+    margin-left: auto; /* Pushes the first item (Profile) to the right */
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: grey;
+    position: relative;
+    /* Maintain font size but increase the clickable area */
+    padding: 10px 10px; /* Adjust padding for larger clickable area */
+    
+  }
+  
+  header nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    border-bottom-width: #A4A4A4;
+    
+  }
+
+
+/* Increase the size of the icons */
+aside.sidebar nav ul li a i {
+  font-size: 24px; /* Adjust the icon size as needed */
+}
+
+
+/* Change color of icon and text on click */
+aside.sidebar nav ul li a:active,
+aside.sidebar nav ul li a:active i {
+color: #0047ab; /* Change color on click */
+}
+
+/* Change color on hover */
+aside.sidebar nav ul li a:hover,
+aside.sidebar nav ul li a:hover {
+color: black;
+}
+
+/* Styling main content area */
+main {
+  display: flex;
+  justify-content: center; /* Center the content */
+  padding: 20px;
+}
+
+.about-us {
+  text-align: center; /* Center align content */
+  padding: 60px; /* Add padding for spacing */
+  margin-top: -250px;
+
+}
+
+.about-us h2 {
+  font-size: 24px; /* Example heading font size */
+  color: black; /* Example heading color */
+  margin-right:900px;
+  margin-top: 200px;
+}
+
+.about-us p {
+  font-size: 16px; /* Example paragraph font size */
+  color: black; /* Example paragraph color */
+  margin-top: 20px;
+
+  
+}
+
+/* Styling footer */
+footer {
+  position: fixed;
+  padding: 0px 0;
+  bottom: 0;
+  width : 100%;
+  background-color: #FEFEFA;
+  border-top: 1px solid #A4A4A4;
+  color: white;
+  font-size:12px;
+  text-align: center;
+  background-color: #08155c;
+  margin-left: -50px;
+}
+
+.sidebar {
+background-image: url("1.png");
+}
+
+aside.sidebar {
+  background-color: #FEFEFA;
+  color: black;
+  width: 50px;
+  padding-top: 15px;
+  border-right: 1px solid #A4A4A4;
+}
+
+aside.sidebar {
+  font-size: 13px;
+  padding: 10px 10px;
+  text-align: center;
+  
+}
+
+aside.sidebar nav ul {
+  padding-left: 0;
+}
+
+aside.sidebar nav ul li {
+  padding: 10px 10px;
+  list-style-type: none;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #A4A4A4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 5px;
+}
+  
+
+aside.sidebar nav ul li a {
+  color: #A4A4A4;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+aside.sidebar nav ul li a i {
+  margin-bottom: 5px;
+}
+
+.image-grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates a grid with 3 columns */
+  gap: 0px; /* Gap between images */
+  margin-left: 100px; /* Adjust margin to position grid */
+  justify-content: space-around; /* Distribute items evenly along the row */
+  margin-top: 0px;
+  
+  
+}
+
+.image-grid2 img {
+  width: 50%; /* Set images to occupy full width of their grid cell */
+  height: auto; /* Maintain aspect ratio */
+  border-radius:10%
+}
+
+.image-grid2 p{
+  margin-right: 200px;
+  border: 1px solid #A4A4A4 ;
+  background-color:#f1f1f1;
+}
+
+.footer .social a i {
+  display: inline-block;
+  width: 35px; /* Set the width and height to create a circle */
+  height: 40px; /* Adjust the size as needed */
+  text-align: center;
+  line-height: 40px; /* Center the icon vertically */
+  border-radius: 50%; /* Make the element a circle by setting border-radius to 50% */
+  margin-right: 2px; /* Adjust spacing between icons if necessary */
+  margin-top: 4px;
+  color: #0818A8; /* Set the color of the social icons to white */
+  background-color: white; /* Background color of the circular icon */
+  font-size: 20px; /* Adjust icon size if needed */
+  
+}
+
+.footer .social a span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* Adjust spacing between icon and text */
+  font-size: 12px; /* Adjust the font size as needed */
+  color: white;
+}
+
+/* Update sidebar positioning */
+aside.sidebar {
+  position: fixed; /* Fixed positioning */
+  top: 0px; /* Adjust the distance from the top as needed */
+  bottom:0px;
+  left: 0; /* Align to the left */
+  height: calc(100% - 100px); /* Fill remaining height of the viewport */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+  
+
+ 
+  

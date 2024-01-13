@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GALLERY</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Visage">
+	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .section {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .section h2 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .image-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .image-container img {
+            max-width: 250px;
+            height: auto;
+            margin-right: 20px; /* Adjust the margin as needed */
+        }
+
+
+
+
+        .product-container {
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .product-container img {
+            border-radius: 20px;
+            max-width: 700px;
+            height: auto;
+            margin-right: 20px; /* Adjust the margin as needed */
+        }
+
+        .product-details {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            flex-grow: 1;
+        }
+
+        /* Optional: Adding some styling for the description and price */
+        .product-details p {
+            margin: 0;
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: #007bff; /* Adjust the color as needed */
+        }
+
+        #popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+
+        #popup-image {
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 5px;
+            border-radius: 20px;
+        }
+
+        #close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        #buy-now-button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #popup-description {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        #popup-option {
+            margin-top: 10px;
+        }
+
+        .product-details p strong{
+            font-size: 20px;
+        }
+
+    </style>
+  
+</head>
+<body>
+<div class="bg-img">
+	<header>
+    <div class="container">
+      <div class="logo">
+        <img src="cam.png" class="logo" width="70" height="70">
+        <h2>SNAPSHOP STORE</h2>
+      </div>
+        <div class="profile-register">
+		  <a href="file:///C:/aWEB%20DESIGN%203133/WWW/log.html"><i class="fa fa-pencil"></i>Register</a>
+          <a href="file:///C:/aWEB%20DESIGN%203133/WWW/profiless.html"><i class="fa fa-user"></i>Profile</a>
+      
+      
+    </div>
+	<div class="footer-extension"></div>
+  </header>
+
+
+
+
+
+
+
+
+<main>
+	<div class="cointainer">
+        <h1 style=" font-size: 35px;">PHOTO COLLECTION</h1>
+        <div class="section" id="section1">
+            <h2 style=" font-size: 25px; text-decoration: underline;">FOODS</h2>
+            <div class="product-container">
+                <img src="food1.jpg" alt="Product 1" onclick="showPopup('food1.jpg', '<strong>Description :</strong><br>Juicy, seared ribeye steak with a caramelized crust, tender pink<br> center, and a savory aroma. Pure carnivorous delight.<br><br><strong>Size: </strong>800 x 600 pixels<br><strong>Type: </strong>JPEG<br><strong>Date of Creation: </strong>January 1, 2022<br><strong>Camera: </strong>Canon EOS 5D Mark IV<br><strong>Photographer: </strong>John Doe<br><br><strong>Price: </strong>RM19.90<br><br><strong>Select Payment Option :</strong>', 'Option Value 1')">
+                <div class="product-details">
+                    <p><strong>Description :</strong>
+                        <br>Juicy, seared ribeye steak with a caramelized crust, tender pink center, and a savory aroma. Pure carnivorous delight.
+                        <br><br><strong>Size: </strong>800 x 600 pixels
+                        <br><br><strong>Type: </strong>JPEG
+                        <br><br><strong>Date of Creation: </strong>January 1, 2022
+                        <br><br><strong>Camera: </strong>Canon EOS 5D Mark IV
+                        <br><br><strong>Photographer: </strong>John Doe
+                    </p>
+                    <br>
+                    <p class="product-price" style="font-size: 30px; padding-top: 100px;">RM19.99</p>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <img src="food2.jpg" alt="Product 1" style="order: 1; margin: 1px;" onclick="showPopup('food2.jpg', '<strong>Description :</strong><br>Vibrant array of farm-fresh fruits and vegetables, a colorful <br> symphony of nature bounty and wholesome goodness.<br><br><strong>Size: </strong>650 x 500 pixels<br><strong>Type: </strong>PNG<br><strong>Date of Creation: </strong>February 27, 2020<br><strong>Camera: </strong>Nikon D850<br><strong>Photographer: </strong>Therry Henry<br><br><strong>Price: </strong>RM20.10<br><br><strong>Select Payment Option :</strong>', 'Option Value 1')">
+                <div class="product-details">
+                    <p><strong>Description :</strong>
+                        <br>Vibrant array of farm-fresh fruits and vegetables, a colorful symphony of nature bounty <br> and wholesome goodness.
+                        <br><br><strong>Size: </strong>650 x 500 pixels
+                        <br><br><strong>Type: </strong>PNG
+                        <br><br><strong>Date of Creation: </strong>February 27, 2020
+                        <br><br><strong>Camera: </strong>Nikon D850
+                        <br><br><strong>Photographer: </strong>Therry Henry
+                    </p>
+                    <br>
+                    <p class="product-price" style="font-size: 30px; padding-top: 50px;">RM20.10</p>
+                </div>
+            </div>
+        
+        </div>
+    
+
+
+
+
+
+        <div class="section" id="section2">
+            <h2 style=" font-size: 25px; text-decoration: underline;">ANIMALS</h2>
+            <div class="product-container">
+                <img src="animal1.jpg" alt="Product 1" onclick="showPopup('animal1.jpg', '<strong>Description :</strong><br>Gentle giant, majestic elephant: a symbol of strength and grace,<br> embodying the wonders of the animal kingdom<br><br><strong>Size: </strong>1900 x 700 pixels<br><strong>Type: </strong>JPEG<br><strong>Date of Creation: </strong>March 11, 2019<br><strong>Camera: </strong>Sony Alpha 7 III<br><strong>Photographer: </strong>Robert Van Persie<br><br><strong>Price: </strong>RM39.50<br><br><strong>Select Payment Option :</strong>', 'Option Value 1')">
+                <div class="product-details">
+                    <p><strong>Description :</strong>
+                        <br>Gentle giant, majestic elephant: a symbol of strength and grace, embodying the wonders of the animal kingdom
+                        <br><br><strong>Size: </strong>1900 x 700 pixels
+                        <br><br><strong>Type: </strong>JPEG
+                        <br><br><strong>Date of Creation: </strong>March 11, 2019
+                        <br><br><strong>Camera: </strong>Sony Alpha 7 III
+                        <br><br><strong>Photographer: </strong> Robert Van Persie
+                    </p>
+                    <br>
+                    <p class="product-price" style="font-size: 30px; padding-top: 30px;">RM39.50</p>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <img src="animal2.jpg" alt="Product 1" style="order: 1; margin: 1px;" onclick="showPopup('animal2.jpg', '<strong>Description :</strong><br>Oceanic feast: graceful whales gliding through azure waves,<br> a majestic spectacle in the vast aquatic banquet.<br><br><strong>Size: </strong>900 x 650 pixels<br><strong>Type: </strong>JPEG<br><strong>Date of Creation: </strong>May 14, 2020<br><strong>Camera: </strong>Canon EOS 5D Mark IV<br><strong>Photographer: </strong>Jordi Amat<br><br><strong>Price: </strong>RM27.90<br><br><strong>Select Payment Option :</strong>', 'Option Value 1')">
+                <div class="product-details">
+                    <p><strong>Description :</strong>
+                        <br>Oceanic feast: graceful whales gliding through azure waves, a majestic spectacle in the vast aquatic banquet.
+                        <br><br><strong>Size: </strong>900 x 650 pixels
+                        <br><br><strong>Type: </strong>JPEG
+                        <br><br><strong>Date of Creation: </strong>May 14, 2020
+                        <br><br><strong>Camera: </strong>Canon EOS 5D Mark IV
+                        <br><br><strong>Photographer: </strong>Jordi Amat
+                    </p>
+                    <br>
+                    <p class="product-price" style="font-size: 30px; padding-top: 20px;">RM27.90</p>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+
+        <div class="section" id="section3">
+            <h2 style="font-size: 25px; text-decoration: underline;">CITY</h2>
+            <div class="product-container">
+                <img src="city1.jpg" alt="Product 1" onclick="showPopup('city1.jpg', '<strong>Description :</strong><br>Glimmering city lights paint the night, as New York nocturnal <br> charm unfolds in a breathtaking urban mosaic.<br><br><strong>Size: </strong>1700 x 600 pixels<br><strong>Type: </strong>PNG<br><strong>Date of Creation: </strong>December 15, 2017<br><strong>Camera: </strong>Nikon D850<br><strong>Photographer: </strong>Mesut Ozil<br><br><strong>Price: </strong>RM60.60<br><br><strong>Select Payment Option :</strong>', 'Option Value 1')">
+                <div class="product-details">
+                    <p><strong>Description :</strong>
+                        <br>Glimmering city lights paint the night, as New York's nocturnal charm unfolds in a breathtaking urban mosaic.
+                        <br><br><strong>Size: </strong>1700 x 600 pixels
+                        <br><br><strong>Type: </strong>PNG
+                        <br><br><strong>Date of Creation: </strong>December 15, 2017
+                        <br><br><strong>Camera: </strong>Nikon D850
+                        <br><br><strong>Photographer: </strong>Mesut Ozil
+                    </p>
+                    <br>
+                    <p class="product-price" style="font-size: 30px; padding-top: 30px;">RM60.60</p>
+                </div>
+            </div>
+
+
+            <div class="product-container">
+                <img src="city2.jpg" alt="Product 1" style="order: 1; margin: 1px;" onclick="showPopup('city2.jpg', '<strong>Description :</strong><br>Juicy, seared ribeye steak with a caramelized crust, tender pink<br> center, and a savory aroma. Pure carnivorous delight.<br><br><strong>Size: </strong>900 x 700 pixels<br><strong>Type: </strong>JPEG<br><strong>Date of Creation: </strong>November 22, 2017<br><strong>Camera: </strong>Sony Alpha 7 III<br><strong>Photographer: </strong>Ahmad Kassim<br><br><strong>Price: </strong>RM45.90<br><br><strong>Select Payment Option :</strong>', 'Option Value 1')">
+                <div class="product-details">
+                    <p><strong>Description :</strong>
+                        <br>Bright daylight bathes New York City, revealing its dynamic streets, diverse culinary delights, and the iconic skyline's grandeur.
+                        <br><br><strong>Size: </strong>900 x 700 pixels
+                        <br><br><strong>Type: </strong>JPEG
+                        <br><br><strong>Date of Creation: </strong>November 22, 2017
+                        <br><br><strong>Camera: </strong>Sony Alpha 7 III
+                        <br><br><strong>Photographer: </strong>Ahmad Kassim
+                    </p>
+                    <br>
+                    <p class="product-price" style="font-size: 30px; padding-top: 50px;">RM45.90</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup-container">
+            <span id="close-button" onclick="closePopup()">&#10006;</span>
+            <img id="popup-image" src="" alt="Popup Image">
+            <p id="popup-description"></p>
+            <select id="popup-option"name="payment_option">
+                <option value="online_banking">Online Banking</option>
+                <option value="credit_card">Credit Card</option>
+            </select>
+            <br><br><br>
+            <a id="buy-now-button" href="#" onclick="buyNow()">Buy Now</a>
+        </div>
+    
+ 
+	
+
+
+
+
+
+
+
+
+ 
+	</main>
+
+    <script>
+        function showPopup(imageSrc, description, optionValue) {
+            // Display the popup with the selected image, description, and option value
+            document.getElementById('popup-image').src = imageSrc;
+            document.getElementById('popup-description').innerHTML = description;
+            document.getElementById('popup-option').value = optionValue;
+            document.getElementById('popup-container').style.display = 'block';
+        }
+    
+        function closePopup() {
+            // Close the popup
+            document.getElementById('popup-container').style.display = 'none';
+        }
+
+        function buyNow() {
+        // Add your buy now action here
+        alert('Thank you for purchasing the image!');
+        closePopup(); // Close the popup after the action
+    }
+    </script>
+
+<aside class="sidebar">
+        <nav>
+          <ul>
+        <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/home.html"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/gallery.html"><i class="fa fa-camera-retro"></i>Gallery</a></li>
+        <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/businesswithnav.html"><i class="fa fa-briefcase"></i>Business</a></li>
+        <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/tipsphoto.html"><i class="fa fa-pencil"></i>Tips Photo</a></li>
+        <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/customerserviceFAQ.html"><i class="fa fa-user"></i>Customer Service</a></li>
+		
+          </ul>
+        </nav>
+</aside>
+</div>
+  <footer>
+  <div class="footer">
+    <div class="social">
+      <a type="#" class="instagram">
+        <i class="fa fa-instagram"></i>
+        <span> snap_shot</span> <!-- Text added beside Instagram icon -->
+      </a>
+      <a type="#" class="twitter">
+        <i class="fa fa-twitter"></i>
+        <span> snapshot_</span> <!-- Text added beside Twitter icon -->
+      </a>
+      <a type="#" class="facebook">
+        <i class="fa fa-facebook"></i>
+        <span> snapshot_store</span> <!-- Text added beside Facebook icon -->
+      </a>
+  </div>
+      <p>&copy; 2023 SnapShot Store. All Rights Reserved.</p>
+    </div>
+  </footer>
+</div>
+</div>
+</body>
+</html>

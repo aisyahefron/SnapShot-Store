@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charser="UTF-8">
+	<title>PROFILE</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Visage">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        	
+#mainlayout {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin-top as needed */
+	
+	
+    }
+	
+  body {
+  margin-bottom: 0%;
+  padding-left: 3%;
+  margin: fixed;
+  background-image: url("2.png");
+}
+	
+#content-container {
+  display: flex;
+  
+}
+
+.content {
+  width: 25%; /* Adjust the width as needed */
+}
+
+.content2 {
+  width: 75%; /* Adjust the width as needed */
+}
+
+/* Optional: Add some spacing between the columns */
+.content, .content2 {
+  padding: 20px;
+}
+
+
+    .interest-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+	  color: #000000;
+    }
+
+    .interest-button-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+	  padding-bottom: 20px;
+	  
+    }
+	
+	.edit-button-container{
+	padding-bottom: 100px;
+	}
+
+    .interest-button {
+            display: block;
+            background-color: #3498db;
+            color: #000000;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px; /* Adjust the margin-right as needed for spacing */
+        }
+	
+	.profile-section {
+    position: absolute;
+    top: 100px; /* Adjust the top position as needed */
+	left: 40%;
+    text-align: center;
+	color:#000000;
+	
+	
+}
+
+header {
+  overflow: hidden;
+  background-color: #FEFEFA;
+  text-align: center;
+  padding: 0px 0;
+  top: 0;
+  position: relative; /* Positioning context for absolute positioning */
+  border-bottom: 1px solid #A4A4A4 ;
+  background-color: #08155c;
+  
+}
+
+header .container {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 15px; /* Adjust vertical spacing */
+}
+
+/* SNAPSHOT STORE */
+
+header h2 {
+  font-size: 25px;
+  color: white; 
+  
+  
+}
+
+/* Styling for the Profile and Register links */
+/* horizontal nav */
+.profile-register {
+  position: absolute;
+  top: 35px;
+  right: 10px; /* Adjust right position */
+}
+
+.profile-register a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 6px; /* Adjust padding as needed */
+  margin-left: 5px; /* Adjust margin between links */
+  font-size: 20px; /* Increase the font size */
+}
+
+/* Change color on hover */
+.profile-register a:hover ,
+.profile-register a:hover i{
+  color: #0047ab;
+}
+
+/* Increase the size of the icons */
+.profile-register a i {
+  font-size: 20px; /* Adjust the icon size as needed */
+}
+
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  font-size: 20px; /* Increase size of navigation */
+}
+
+header nav ul li {
+  margin-left: 20px; /* Separate the list items */
+}
+
+header nav ul li:first-child {
+  margin-left: auto; /* Pushes the first item (Profile) to the right */
+}
+
+header nav ul li a {
+  text-decoration: none;
+  position: relative;
+  /* Maintain font size but increase the clickable area */
+  padding: 10px 10px; /* Adjust padding for larger clickable area */
+}
+
+header nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  border-bottom-width: #A4A4A4;
+}
+
+.sidebar {
+background-image: url("1.png");
+}
+
+/* Increase the size of the icons */
+aside.sidebar nav ul li a i {
+  font-size: 24px; /* Adjust the icon size as needed */
+  
+}
+
+
+/* Change color of icon and text on click */
+aside.sidebar nav ul li a:active,
+aside.sidebar nav ul li a:active i {
+color: #0047ab; /* Change color on click */
+}
+
+/* Change color on hover */
+aside.sidebar nav ul li a:hover,
+aside.sidebar nav ul li a:hover {
+color: black;
+}
+
+footer {
+  position: fixed;
+  padding: 0px 0;
+  bottom: 0;
+  width : 100%;
+  background-color: #FEFEFA;
+  border-top: 1px solid #A4A4A4;
+  color: white;
+  font-size:12px;
+  text-align: center;
+  background-color: #08155c;
+  margin-left: -50px;
+}
+
+.footer .social a i {
+  display: inline-block;
+  width: 35px; /* Set the width and height to create a circle */
+  height: 40px; /* Adjust the size as needed */
+  text-align: center;
+  line-height: 40px; /* Center the icon vertically */
+  border-radius: 50%; /* Make the element a circle by setting border-radius to 50% */
+  margin-right: 2px; /* Adjust spacing between icons if necessary */
+  margin-top: 4px;
+  color: #0818A8; /* Set the color of the social icons to white */
+  background-color: white; /* Background color of the circular icon */
+  font-size: 20px; /* Adjust icon size if needed */
+  
+}
+
+.footer .social a span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* Adjust spacing between icon and text */
+  font-size: 12px; /* Adjust the font size as needed */
+  color: white;
+}
+
+  </style>
+  
+</head>
+<body>
+<div class="bg-img">
+	<header>
+    <div class="container">
+      <div class="logo">
+        <img src="cam.png" class="logo" width="70" height="70">
+        <h2>SNAPSHOT STORE</h2>
+    </div>
+        <div class="profile-register">
+		  <a href="file:///C:/aWEB%20DESIGN%203133/WWW/log.html"><i class="fa fa-pencil"></i>Register</a>
+          <a href="file:///C:/aWEB%20DESIGN%203133/WWW/profiless.html"><i class="fa fa-user"></i>Profile</a>
+      
+    </div>
+	<div class="footer-extension"></div>
+  </header>
+<main>
+	<div class="cointainer">
+        <h1 style="text-align: left; margin: 30px;"><b>PROFILE</b></h1>
+        <div class="profile-section">
+            <div class="container-fluid bg-1 text-center">
+              <img src="sofeashra.jpeg" class="img-responsive img-circle" style="display:inline; width:200px; margin-top: 70px; border-radius:100px;" alt="Sofea's profile" >
+              <br>
+              <h3 id="profileName">Sofea Shaheera</h3>
+              <p id="profileBio">Just be yourself, there is no one better<p>
+              <p id="profileEmail">sofeashra@gmail.com<p>
+      
+  <div class="interest-label">INTEREST</div>
+  <div class="interest-button-container">
+    <button class="interest-button" onclick="navigateToLink('https://www.google.com/search?q=nature&sca_esv=594355207&rlz=1C1BNSD_enMY988MY988&tbm=isch&sxsrf=AM9HkKmMf9vG8XBX3MMT6MUlOi9MzRDNjA:1703825414791&source=lnms&sa=X&ved=2ahUKEwjXi-6k7LODAxVXS2cHHRlvBTEQ_AUoAXoECAMQAw&biw=638&bih=549&dpr=1.5')">Nature</button>
+    <button class="interest-button" onclick="navigateToLink('https://www.google.com/search?q=sports+car&sca_esv=594355207&rlz=1C1BNSD_enMY988MY988&tbm=isch&sxsrf=AM9HkKlSSSmAoPVMH8wiZIl74TE77n8C6g:1703825357082&source=lnms&sa=X&ved=2ahUKEwjn3quJ7LODAxVKUGwGHbZJDIkQ_AUoAXoECAEQAw&biw=638&bih=549&dpr=1.5')">Sport Car</button>
+    <button class="interest-button" onclick="navigateToLink('https://drive.google.com/drive/u/0/folders/1YeWHgZXxo5PQpGCyQIHE7RqUENQGWNVT')">Photography</button>
+    <button class="interest-button" onclick="navigateToLink('https://www.youtube.com/watch?v=v70VhIeurKQ&t=4627s')">Music</button>
+  </div>
+  <script>
+    function navigateToLink(link) {
+      if (link.includes('youtube.com')) {
+        window.location.href = link;
+      } else {
+        window.open(link, '_blank');
+      }
+    }
+  </script>
+      <br>
+	<div class="edit-button-container">
+      <button onclick="editProfile()">Edit Profile</button>
+      <button onclick="editImage()">Edit Image</button>
+	</div>
+  </div>	
+  </div>
+  </section>
+  </div>
+      </div>
+    
+ 
+
+	</main>
+
+    <aside class="sidebar">
+        <nav>
+          <ul>
+           <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/home.html"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/gallery.html"><i class="fa fa-camera-retro"></i>Gallery</a></li>
+        <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/businesswithnav.html"><i class="fa fa-briefcase"></i>Business</a></li>
+        <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/tipsphoto.html"><i class="fa fa-pencil"></i>Tips Photo</a></li>
+        <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/customerserviceFAQ.html"><i class="fa fa-user"></i>Customer Service</a></li>
+		
+          </ul>
+        </nav>
+      </aside>
+</div>
+
+
+  <footer>
+  <div class="footer">
+    <div class="social">
+      <a type="#" class="instagram">
+        <i class="fa fa-instagram"></i>
+        <span> snap_shot</span> <!-- Text added beside Instagram icon -->
+      </a>
+      <a type="#" class="twitter">
+        <i class="fa fa-twitter"></i>
+        <span> snapshot_</span> <!-- Text added beside Twitter icon -->
+      </a>
+      <a type="#" class="facebook">
+        <i class="fa fa-facebook"></i>
+        <span> snapshot_store</span> <!-- Text added beside Facebook icon -->
+      </a>
+  </div>
+      <p>&copy; 2023 SnapShot Store. All Rights Reserved.</p>
+    </div>
+  </footer>
+    <script>
+    // Simulate profile editing using JavaScript
+    function editProfile() {
+      var newName = prompt("Enter new name:");
+      var newBio = prompt("Enter new bio:");
+      var newEmail = prompt("Enter new email:");
+
+      // Update profile information
+      document.getElementById("profileName").innerText = newName;
+      document.getElementById("profileBio").innerText = newBio;
+      document.getElementById("profileEmail").innerText = newEmail;
+    }
+
+    // Simulate image editing using JavaScript
+    function editImage() {
+      var newImageSrc = prompt("Enter new image URL:");
+      
+      // Update profile image
+      document.getElementById("profileImage").src = newImageSrc;
+    }
+		
+  </script>
+</body>
+</html>

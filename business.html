@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BUSINESS</title>
+    <style>
+    body {
+        font-family: 'sans-serif', serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+		background-image: url("2.png");
+    }
+	
+	/*homepage*/
+header {
+  overflow: hidden;
+  background-color: #FEFEFA;
+  text-align: center;
+  padding: 0px 0;
+  top: 0;
+  position: relative; /* Positioning context for absolute positioning */
+  border-bottom: 1px solid #A4A4A4 ;
+  background-color: #08155c;
+  
+}
+  header .container {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 15px; /* Adjust vertical spacing */
+}
+
+/* SNAPSHOT STORE */
+
+header h2 {
+  font-size: 25px;
+  color: white; /* cobalt blue*/
+  
+  
+}
+
+/* Styling for the Profile and Register links */
+/* horizontal nav */
+.profile-register {
+  position: absolute;
+  top: 35px;
+  right: 10px; /* Adjust right position */
+}
+
+.profile-register a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 6px; /* Adjust padding as needed */
+  margin-left: 5px; /* Adjust margin between links */
+  font-size: 20px; /* Increase the font size */
+}
+
+/* Change color on hover */
+.profile-register a:hover ,
+.profile-register a:hover i{
+  color: #0047ab;
+}
+
+/* Increase the size of the icons */
+.profile-register a i {
+  font-size: 20px; /* Adjust the icon size as needed */
+}
+
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  font-size: 20px; /* Increase size of navigation */
+}
+
+header nav ul li {
+  margin-left: 20px; /* Separate the list items */
+}
+
+header nav ul li:first-child {
+  margin-left: auto; /* Pushes the first item (Profile) to the right */
+}
+
+header nav ul li a {
+  text-decoration: none;
+  position: relative;
+  /* Maintain font size but increase the clickable area */
+  padding: 10px 10px; /* Adjust padding for larger clickable area */
+}
+
+header nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  border-bottom-width: #A4A4A4;
+}
+
+.sidebar {
+background-image: url("1.png");
+}
+
+/* Increase the size of the icons */
+aside.sidebar nav ul li a i {
+  font-size: 24px; /* Adjust the icon size as needed */
+  
+}
+
+
+/* Change color of icon and text on click */
+aside.sidebar nav ul li a:active,
+aside.sidebar nav ul li a:active i {
+color: #0047ab; /* Change color on click */
+}
+
+/* Change color on hover */
+aside.sidebar nav ul li a:hover,
+aside.sidebar nav ul li a:hover {
+color: black;
+}
+
+footer {
+  position: fixed;
+  padding: 0px 0;
+  bottom: 0;
+  width : 100%;
+  background-color: #FEFEFA;
+  border-top: 1px solid #A4A4A4;
+  color: white;
+  font-size:12px;
+  text-align: center;
+  background-color: #08155c;
+  margin-top: 50px;
+  }
+
+.footer .social a i {
+  display: inline-block;
+  width: 35px; 
+  height: 40px; 
+  text-align: center;
+  line-height: 40px; /* Center the icon vertically */
+  border-radius: 50%; /* Make the element a circle by setting border-radius to 50% */
+  margin-right: 2px; /* Adjust spacing between icons if necessary */
+  margin-top: 4px;
+  color: #0818A8; /* Set the color of the social icons to white */
+  background-color: white; /* Background color of the circular icon */
+  font-size: 20px; /* Adjust icon size if needed */
+  
+}
+
+.footer .social a span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* Adjust spacing between icon and text */
+  font-size: 12px; /* Adjust the font size as needed */
+  color: white;
+}
+ /*endhomepage*/
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+		margin-right:1000px;
+    }
+	
+	main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+	
+}
+
+.box {
+    border: 2px solid #A4A4A4;
+    padding: 20px;
+    margin: 10px;
+    width: 500px; /* Adjust the width in pixels as needed */
+    box-sizing: border-box;
+    border-radius: 10px;
+    max-width: 600px; /* Set a maximum width for better responsiveness */
+	
+	
+}
+
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: 10px;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 10px;
+    }
+
+    input,
+    select {
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+		border-radius: 20px;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    /* Style for the camera icon */
+    .fa-camera-container {
+        text-align: center;
+    }
+
+    .fa-camera-text {
+        margin-bottom: 20px;
+    }
+
+    .fa-camera {
+        cursor: pointer;
+        color: #000000;
+        font-size: 30px; /* Increased font size */
+        display: block;
+        margin-top: 10px;
+		transform: scale(1.8); /* Scale the icon without changing the font size */
+    }
+
+    /* Hide the file input */
+    #hiddenFileInput {
+        display: none;
+    }
+
+    .submit-button-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .container .box {
+	padding-bottom: 70px;
+	}
+	
+
+    </style>
+</head>
+<body>
+<!-- Include the header -->
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="cam.png" class="logo" width="70" height="70">
+                <h2>SNAPSHOT STORE</h2>
+            </div>
+            <div class="profile-register">
+                <a href="file:///C:/aWEB%20DESIGN%203133/WWW/log.html"><i class="fa fa-pencil"></i>Register</a>
+                <a href="file:///C:/aWEB%20DESIGN%203133/WWW/profiless.html"><i class="fa fa-user"></i>Profile</a>
+            </div>
+        </div>
+        <div class="footer-extension"></div>
+    </header>
+
+<!-- Container 1: Upload Image -->
+<main>
+<h1>Business</h1>
+<div class="container">
+    <div class="box">
+        <h2>Upload Image</h2>
+        <div class="fa-camera-container">
+            <div class="fa-camera-text">Upload your image here</div>
+            <label for="hiddenFileInput" class="fa fa-camera" onclick="triggerFileInput()">
+                <!-- Camera icon will be displayed here -->
+            </label>
+        </div>
+        <input type="file" id="hiddenFileInput" accept="image/*" style="display: none;">
+        <img id="previewImage">
+        <div class="submit-button-container">
+            <button onclick="submitForm('image')">Upload</button>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Container 2: Image Details -->
+    <div class="container">
+        <div class="box details">
+            <h2>Image Details</h2>
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="food">food</option>
+                <option value="animal">animal</option>
+                <option value="city">city</option>
+                <!-- Add more categories as needed -->
+            </select>
+
+            <label for="title">Title:</label>
+            <input type="text" id="title">
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" step="0.01">
+
+            <div class="submit-button-container">
+            <button onclick="submitForm('details')">Submit</button>
+        </div>
+    </div>
+</div>
+</main>
+<!-- Include the navigation -->
+    <aside class="sidebar">
+    <nav>
+        <ul>
+             <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/home.html"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/gallery.html"><i class="fa fa-camera-retro"></i>Gallery</a></li>
+        <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/businesswithnav.html"><i class="fa fa-briefcase"></i>Business</a></li>
+        <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/tipsphoto.html"><i class="fa fa-pencil"></i>Tips Photo</a></li>
+        <li><a href="file:///C:/aWEB%20DESIGN%203133/WWW/customerserviceFAQ.html"><i class="fa fa-user"></i>Customer Service</a></li>
+		
+        </ul>
+    </nav>
+</aside>
+
+   <footer>
+    <div class="footer">
+        <div class="social">
+            <a type="#" class="instagram">
+                <i class="fa fa-instagram"></i>
+                <span> snap_shot</span>
+            </a>
+            <a type="#" class="twitter">
+                <i class="fa fa-twitter"></i>
+                <span> snapshot_</span>
+            </a>
+            <a type="#" class="facebook">
+                <i class="fa fa-facebook"></i>
+                <span> snapshot_store</span>
+            </a>
+        </div>
+        <p>&copy; 2023 SnapShot Store. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+    <script>
+    function submitForm(type) {
+    if (type === 'image') {
+        // Get the uploaded image
+        var uploadedImage = document.getElementById('hiddenFileInput').files[0];
+
+        // Check if an image is uploaded
+        if (!uploadedImage) {
+            alert('Please upload an image.');
+            return; // Stop execution if no image is uploaded
+        }
+
+        // You can now use the uploaded image for further processing or submission to a server
+        console.log('Uploaded Image:', uploadedImage);
+
+        // For demonstration purposes, let's just show an alert for image upload
+        alert('Image Uploaded!');
+    } else if (type === 'details') {
+        // Get values from the form
+        var category = document.getElementById('category').value;
+        var title = document.getElementById('title').value;
+        var price = document.getElementById('price').value;
+
+        // Check if all image details are filled in
+        if (!category || !title || !price) {
+            alert('Please fill in all image details.');
+            return; // Stop execution if any detail is missing
+        }
+
+        // You can now use these values for further processing or submission to a server
+        console.log('Category:', category);
+        console.log('Title:', title);
+        console.log('Price:', price);
+
+        // For demonstration purposes, let's just show an alert for image details upload
+        alert('Image Details Uploaded!');
+    }
+}
+
+
+
+    // Function to trigger the hidden file input click event
+    function triggerFileInput() {
+        document.getElementById('hiddenFileInput').click();
+    }
+
+    // Display the preview of the uploaded image
+    document.getElementById('hiddenFileInput').addEventListener('change', function () {
+        var previewImage = document.getElementById('previewImage');
+		var cameraIcon = document.querySelector('.fa-camera');
+        var file = this.files[0];
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+            previewImage.src = reader.result;
+			// Hide the camera icon when an image is previewed
+        cameraIcon.style.display = 'none';
+        };
+
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            previewImage.src = "";
+        }
+    });
+
+    // Attach the triggerFileInput function to the camera icon click event
+    document.querySelector('.fa-camera').addEventListener('click', triggerFileInput);
+</script>
+
+</body>
+</html>

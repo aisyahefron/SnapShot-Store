@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LOG IN</title>
+  <style>
+    body, html {
+      height: 50%;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+	  
+    }
+
+   .bg-img {
+    min-height: 600px;
+      position: relative;
+	   background-image: url("pic4.jpg");
+	.bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.5; /* Set the opacity of the overlay containing the background image */
+    }
+  }
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 360px;
+      padding: 30px;
+      background-color: white;
+	  opacity: 1;
+	  border-radius: 7%;
+    }
+
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0px 10px 0px;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    .btn {
+      background-color: blue;
+      color: white;
+      padding: 12px 20px;
+      border: 2px solid white; /* Border properties for the buttons */
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+      border-radius: 25px; /* Set the border radius to make the button oval */
+    }
+
+    .btn:hover {
+      opacity: 1;
+    }
+
+    .container img {
+      vertical-align: middle;
+    }
+
+	.close-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 2; /* Ensure the close icon stays above other elements */
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="bg-img">
+    <form action="file:///C:/aWEB%20DESIGN%203133/WWW/home.html" class="container">
+	<span class="close-icon" onclick="redirectToHomepage()">×</span>
+    
+       <h1 style="margin-left: 50px;">LOG IN</h1>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+	  <p style="margin-left: 250px;"> <!-- Added style to the <p> tag -->
+        <a href="file:///C:/aWEB%20DESIGN%203133/WWW/log.html">Reset</a>
+      </p>
+      <button type="submit" class="btn">log in</button>
+	 <button type="submit" class="btn">connect with google</button>
+	  <button type="submit" class="btn">connect with Facebook</button>
+	  <p style="margin-left: 90px;">Create account?</p> <!-- Adjust margin for Create Account -->
+	  <p style="color: white;">
+  <button type="submit" class="btn">
+    <a href="file:///C:/aWEB%20DESIGN%203133/WWW/sign.html" style="color: white; text-decoration: none;">SIGN UP</a>
+  </button>
+</p>
+
+	  </form>
+  </div>
+  <script>
+    function redirectToHomepage() {
+      // Redirect the user to the provided URL (YouTube in this example)
+      window.location.href = 'file:///C:/aWEB%20DESIGN%203133/WWW/home.html';
+    }
+  </script>
+
+</body>
+</html>
